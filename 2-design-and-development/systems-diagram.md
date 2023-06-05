@@ -42,7 +42,7 @@ The solution is engaging for the user to use. To do this, I will create 5 levels
 #### Aims
 
 * Create a series of levels to work through
-* Create a multiplayer mode to play
+* Create Boss fights with clearly telegraphed attacks
 * Incorporate a style of game art the suits the game
 
 ### Error Tolerant
