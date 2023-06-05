@@ -33,6 +33,7 @@ The speed and accuracy to which a user can complete the goal. To do this, I will
 
 * Create a menu system that is quick and easy to navigate through
 * Create a controls system that isn't too complicated but allows the player to do multiple actions
+* Clear but challenging levels where the task is simple but difficult to execute
 
 ### Engaging
 
