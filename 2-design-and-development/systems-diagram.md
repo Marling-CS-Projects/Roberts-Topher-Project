@@ -21,7 +21,9 @@ Users can achieve the goal with completeness and accuracy. To do this, I will ma
 #### Aims
 
 * Create a clear goal to reach to determine the end of a level
-* Create a clear goal for any multiplayer modes
+* Hazards are clearly identifiable as to not feel cheap
+
+
 
 ### Efficiency
 
