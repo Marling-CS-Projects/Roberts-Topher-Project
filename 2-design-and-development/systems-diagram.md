@@ -67,19 +67,22 @@ The solution should be easy to use and not be over complicated. To do this, I wi
 
 ### Pseudocode for game
 
-This is the basic layout of the object to store the details of the game. This will be what is rendered as it will inherit all important code for the scenes.
+This is the basic layout of the object to store the details of the game. This will be what is rendered as it will inherit all important code for the scenes. (basic code for a Kaboom.js program)
 
 ```
-object Game
-    type: Phaser
-    parent: id of HTML element
-    width: width
-    height: height
-    physics: set up for physics
-    scenes: add all menus, levels and other scenes
-end object
+import kaboom
+import assets
 
-render Game to HTML web page
+kaboom
+    background colour
+    width 
+    height 
+
+load assets
+
+constant gravity
+constant moving speed
+constant death boundaries
 ```
 
 ### Pseudocode for a level
