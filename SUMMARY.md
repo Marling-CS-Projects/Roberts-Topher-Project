@@ -16,7 +16,7 @@
 
 * [2.1 Design Frame](2-design-and-development/systems-diagram.md)
 * [2.2 Stage setup](2-design-and-development/cycle-1.md)
-* [2.3 Stage setup](design-and-development/cycle-1-1.md)
+* [2.3 Movement](design-and-development/cycle-1-1.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
 
