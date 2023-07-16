@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 1
+# 2.2.1 Stage setup
 
 ## Design
 
@@ -13,17 +13,39 @@
 
 ### Key Variables
 
-| Variable Name | Use                   |
-| ------------- | --------------------- |
-| foo           | does something useful |
+| Variable Name  | Use                                                    |
+| -------------- | ------------------------------------------------------ |
+| Load Sprite    | Imports sprite from data base                          |
+| Tile Width     | width of the sprite                                    |
+| Tile Height    | height the sprite                                      |
+| Pos (position) | sets the position of the upper left block              |
+| Tiles          | used to input what each symbol represents in the level |
+| Area           | collision detection (T/F)                              |
+| Body           | static properties (T/F)                                |
 
 ### Pseudocode
 
-```
-procedure do_something
-    
-end procedure
-```
+<pre><code>Import Kabooom
+
+Load Sprite(Floor)
+
+Add Level (
+<strong>  "    ==     ",
+</strong>  "===    ==  ",
+  "           ",)
+  
+tile Width
+tile Height
+pos
+
+tiles (=)
+Sprite(Floor)
+area
+body
+
+  
+  
+</code></pre>
 
 ## Development
 
@@ -35,6 +57,8 @@ Description of challenges
 
 ## Testing
 
+
+
 Evidence for testing
 
 ### Tests
@@ -45,3 +69,5 @@ Evidence for testing
 | 2    | Press buttons | Something happens | As expected           | Pass      |
 
 ### Evidence
+
+![](../.gitbook/assets/image.png)
