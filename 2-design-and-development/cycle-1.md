@@ -47,9 +47,32 @@ body
   
 </code></pre>
 
-## Development
+## Development&#x20;
 
 ### Outcome
+
+```
+loadSprite("Floor", "sprites/Floor.png");
+
+const LEVELS = addLevel([
+  ["    ==        ",
+   "===    ==     ",
+   "           == ",
+  ],
+  
+  tileWidth: 50,
+  tileHeight: 50,
+  
+  pos: vec2(100, 200),
+  
+  tiles: {
+      "=": () => [
+        sprite("player"),
+        area(),
+        body({ isStatic: true }),
+       }
+
+```
 
 ### Challenges
 
