@@ -4,7 +4,7 @@
 
 ### Objectives
 
-\[describe the cycle]
+Set up environment for the Player
 
 * [x] Do a thing
 * [x] Do another thing
