@@ -80,6 +80,7 @@ Evidence for testing
 | ---- | ------------ | ------------- | --------------------- | --------- |
 | 1    | Input Left   | Move left     | Move left             | Pass      |
 | 2    | Input Right  | Move Right    | Move Right            | Pass      |
+| 3    | Input space  | Move up       | Move up               |           |
 
 ### Evidence
 
