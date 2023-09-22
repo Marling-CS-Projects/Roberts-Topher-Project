@@ -1,4 +1,4 @@
-# 2.3 Stage setup
+# 2.3 Movement and Collision
 
 ## Design
 
@@ -50,45 +50,36 @@ anchor
 ### Outcome
 
 ```
-loadSprite("Floor", "sprites/Floor.png");
+  onKeyPress("space", () => {
+    if (player.isGrounded()) {
+      player.jump();
+    }
+  });
 
-const LEVELS = addLevel([
-  ["    ==        ",
-   "===    ==     ",
-   "           == ",
-  ],
-  
-  tileWidth: 50,
-  tileHeight: 50,
-  
-  pos: vec2(100, 200),
-  
-  tiles: {
-      "=": () => [
-        sprite("player"),
-        area(),
-        body({ isStatic: true }),
-       }
+  onKeyDown("left", () => {
+    player.move(-SPEED, 0);
+  });
+
+  onKeyDown("right", () => {
+    player.move(SPEED, 0);
+  });
 
 ```
 
 ### Challenges
 
-Description of challenges
+setting a speed value that makes platforming smooth and movment feel responsive
 
 ## Testing
-
-
 
 Evidence for testing
 
 ### Tests
 
-| Test | Instructions  | What I expect     | What actually happens | Pass/Fail |
-| ---- | ------------- | ----------------- | --------------------- | --------- |
-| 1    | Run code      | Thing happens     | As expected           | Pass      |
-| 2    | Press buttons | Something happens | As expected           | Pass      |
+| Test | Instructions | What I expect | What actually happens | Pass/Fail |
+| ---- | ------------ | ------------- | --------------------- | --------- |
+| 1    | Input Left   | Move left     | Move left             | Pass      |
+| 2    | Input Right  | Move Right    | Move Right            | Pass      |
 
 ### Evidence
 
-![](../.gitbook/assets/image.png)
