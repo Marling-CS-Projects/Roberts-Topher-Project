@@ -22,6 +22,7 @@ Set up environment for the Player
 | Load Sprite         | Used to input what each symbol represents in the level |
 | Area                | Collision detection (T/F)                              |
 | Body                | Static properties (T/F)                                |
+| onKeyPress          | Reads external input                                   |
 
 ### Pseudocode
 
@@ -50,7 +51,14 @@ anchor
 ### Outcome
 
 ```
-  onKeyPress("space", () => {
+  "@": () => [
+        sprite("player"),
+        area(),
+        body(),
+        anchor("bot"),
+        "player",
+        
+   onKeyPress("space", () => {
     if (player.isGrounded()) {
       player.jump();
     }
