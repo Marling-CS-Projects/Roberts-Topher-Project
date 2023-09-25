@@ -15,7 +15,7 @@
 ## 2 Design and Development <a href="#design-and-development" id="design-and-development"></a>
 
 * [2.1 Design Frame](2-design-and-development/systems-diagram.md)
-* [2.2 Stage setup](2-design-and-development/cycle-1.md)
+* [2.2 Cycle 2](2-design-and-development/cycle-1.md)
 * [2.3 Movement and Collision](design-and-development/cycle-1-1.md)
 * [2.4 Enemies](design-and-development/cycle-1-2.md)
 * [Page](design-and-development/page.md)
