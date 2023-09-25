@@ -1,4 +1,4 @@
-# 2.2 Stage setup
+# 2.2 Cycle 1
 
 ## Design
 
@@ -13,15 +13,14 @@ Set up environment for the Player
 
 ### Key Variables
 
-| Variable Name  | Use                                                    |
-| -------------- | ------------------------------------------------------ |
-| Load Sprite    | Imports sprite from data base                          |
-| Tile Width     | width of the sprite                                    |
-| Tile Height    | height the sprite                                      |
-| Pos (position) | sets the position of the upper left block              |
-| Tiles          | used to input what each symbol represents in the level |
-| Area           | collision detection (T/F)                              |
-| Body           | static properties (T/F)                                |
+| Variable Name        | Use                                                                    |
+| -------------------- | ---------------------------------------------------------------------- |
+| kaboom               | Import of the Kaboom library, which simplifies game development        |
+| loadSprite           | Function for loading game sprites with associated names and file paths |
+| setGravity           | Function for setting the gravity force in the game                     |
+| scene                | Function for defining and managing game scenes                         |
+| Tile width / height  | Sets the size of the tiles                                             |
+| Body                 | Eneables collision of the object                                       |
 
 ### Pseudocode
 
@@ -40,7 +39,6 @@ pos
 
 tiles (=)
 Sprite(Floor)
-area
 body
 
   

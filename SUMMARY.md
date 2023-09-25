@@ -15,10 +15,10 @@
 ## 2 Design and Development <a href="#design-and-development" id="design-and-development"></a>
 
 * [2.1 Design Frame](2-design-and-development/systems-diagram.md)
-* [2.2 Cycle 2](2-design-and-development/cycle-1.md)
-* [2.3 Movement and Collision](design-and-development/cycle-1-1.md)
-* [2.4 Enemies](design-and-development/cycle-1-2.md)
-* [Page](design-and-development/page.md)
+* [2.2 Cycle 1](2-design-and-development/cycle-1.md)
+* [2.3 Cycle 2](design-and-development/cycle-1-1.md)
+* [2.4 Cycle 3](design-and-development/cycle-1-2.md)
+* [2.5 Cycle 4](design-and-development/2.5-cycle-4.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
 

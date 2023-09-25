@@ -1,4 +1,4 @@
-# 2.3 Movement and Collision
+# 2.3 Cycle 2
 
 ## Design
 
@@ -13,16 +13,7 @@ Set up environment for the Player
 
 ### Key Variables
 
-| Variable Name       | Use                                                    |
-| ------------------- | ------------------------------------------------------ |
-| Set Gravity         | Sets the constant downward acceleration                |
-| Set Speed           | Sets  Movement speed                                   |
-| constant add player | Add player into the environment                        |
-| Anchor              | Show the anchor point of the Sprite                    |
-| Load Sprite         | Used to input what each symbol represents in the level |
-| Area                | Collision detection (T/F)                              |
-| Body                | Static properties (T/F)                                |
-| onKeyPress          | Reads external input                                   |
+<table><thead><tr><th width="275">Variable Name</th><th>Use</th></tr></thead><tbody><tr><td>Set Gravity</td><td>Sets the constant downward acceleration</td></tr><tr><td>Set Speed</td><td>Sets  Movement speed</td></tr><tr><td>constant add player</td><td>Add player into the environment </td></tr><tr><td>Anchor</td><td>Show the anchor point of the Sprite</td></tr><tr><td>Load Sprite</td><td>Used to input what each symbol represents in the level</td></tr><tr><td>Area</td><td>Collision detection (T/F)</td></tr><tr><td>Body</td><td>Static properties (T/F)</td></tr><tr><td>onKeyPress</td><td>Reads external input</td></tr></tbody></table>
 
 ### Pseudocode
 
