@@ -76,7 +76,7 @@ anchor
 
 ### Challenges
 
-setting a speed value that makes platforming smooth and movment feel responsive
+setting a speed value that makes platforming smooth and movement feel responsive
 
 ## Testing
 
@@ -84,11 +84,9 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect | What actually happens | Pass/Fail |
-| ---- | ------------ | ------------- | --------------------- | --------- |
-| 1    | Input Left   | Move left     | Move left             | Pass      |
-| 2    | Input Right  | Move Right    | Move Right            | Pass      |
-| 3    | Input space  | Move up       | Move up               |           |
+<table data-full-width="true"><thead><tr><th>Test</th><th>Instructions</th><th>What I expect</th><th>What actually happens</th><th>Pass/Fail</th></tr></thead><tbody><tr><td>1</td><td>Input Left </td><td>Move left</td><td>As expected</td><td>Pass</td></tr><tr><td>2</td><td>Input Right</td><td>Move Right </td><td>As expected</td><td>Pass</td></tr><tr><td>3</td><td>Input space</td><td>Move up </td><td>As expected</td><td>Pass</td></tr><tr><td>4</td><td>Walk over platform</td><td>Player collides with the platforms</td><td>As expected</td><td>Pass</td></tr></tbody></table>
 
 ### Evidence
+
+![](<../.gitbook/assets/image (13).png>)
 
