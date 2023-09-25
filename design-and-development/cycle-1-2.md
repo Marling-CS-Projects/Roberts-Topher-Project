@@ -15,10 +15,10 @@ Set up environment for the Player
 
 | Variable Name       | Use                                                    |
 | ------------------- | ------------------------------------------------------ |
-| Set Gravity         | Sets the constant downward acceleration                |
-| Set Speed           | Sets  Movement speed                                   |
+| patrol              | Sets the constant downward acceleration                |
+| chaseAndFlee        | Custom function for enemy chase and flee behavior      |
 | constant add player | Add player into the environment                        |
-| Anchor              | Show the anchor point of the Sprite                    |
+| onCollide           | Show the anchor point of the Sprite                    |
 | Load Sprite         | Used to input what each symbol represents in the level |
 | Area                | Collision detection (T/F)                              |
 | Body                | Static properties (T/F)                                |
@@ -27,18 +27,7 @@ Set up environment for the Player
 ### Pseudocode
 
 ```
-Import Kaboom
 
-Set Gravity:
-Set Speed:
-
-Load Sprite(Player)
-
-constant add player
-sprite(player)
-area
-body
-anchor
 
 
 
@@ -67,6 +56,43 @@ anchor
     },
   };
 }
+
+
+function chaseAndFlee(speed = 60) {
+    let dir = 1;
+    let chasing = true;
+
+    return {
+        id: "chaseAndFlee",
+        require: ["pos", "area"],
+        add() {
+            this.on("collide", (obj, col) => {
+                if (col.isLeft() || col.isRight()) {
+                    dir = -dir;
+                }
+            });
+        },
+        update() {
+            if (chasing) {
+                // Calculate the distance between boss and player
+                const player = get("player")[0];
+                const distanceToPlayer = player ? player.pos.x - this.pos.x : Infinity;
+
+                // If the player is within a certain range, chase the player
+                if (distanceToPlayer < 1000) {
+                    dir = Math.sign(distanceToPlayer); // Set direction based on player position
+                    this.move(speed * dir, 0);
+                } else {
+                    // If the player is too far away, start fleeing
+                    chasing = false;
+                }
+            } else {
+                // Flee from the player
+                this.move(speed * dir, 0);
+            }
+        },
+    };
+}
 //
 
       "*": () => [
@@ -77,7 +103,17 @@ anchor
         anchor("bot"),
         "enemy",
         
+        "#": () => [
+                sprite("Boss"),
+                area(),
+                body(),
+                chaseAndFlee(),
+                anchor("bot"),
+                scale(3),
+                "Boss",
+                
 //
+        
 
 ```
 
