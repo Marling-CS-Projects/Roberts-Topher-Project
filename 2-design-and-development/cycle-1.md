@@ -1,4 +1,4 @@
-# 2.2.1 Stage setup
+# 2.2 Stage setup
 
 ## Design
 
@@ -51,7 +51,7 @@ body
 
 ### Outcome
 
-```
+```html
 loadSprite("Floor", "sprites/Floor.png");
 
 const LEVELS = addLevel([
@@ -67,7 +67,7 @@ const LEVELS = addLevel([
   
   tiles: {
       "=": () => [
-        sprite("player"),
+        sprite("Floor"),
         area(),
         body({ isStatic: true }),
        }
@@ -80,16 +80,9 @@ Description of challenges
 
 ## Testing
 
-
-
-Evidence for testing
-
 ### Tests
 
-| Test | Instructions  | What I expect     | What actually happens | Pass/Fail |
-| ---- | ------------- | ----------------- | --------------------- | --------- |
-| 1    | Run code      | Thing happens     | As expected           | Pass      |
-| 2    | Press buttons | Something happens | As expected           | Pass      |
+<table data-full-width="true"><thead><tr><th>Test</th><th>Instructions</th><th>What I expect</th><th width="227.2">What actually happens</th><th>Pass/Fail</th></tr></thead><tbody><tr><td>1</td><td>Run code</td><td>Grass blocks appear and collide with player</td><td>As expected</td><td>Pass</td></tr></tbody></table>
 
 ### Evidence
 
