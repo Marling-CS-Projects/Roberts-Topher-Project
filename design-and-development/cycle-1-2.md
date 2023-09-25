@@ -83,7 +83,7 @@ anchor
 
 ### Challenges
 
-setting a speed value that makes platforming smooth and movment feel responsive
+setting a speed value that makes platforming smooth and movement feel responsive
 
 ## Testing
 
@@ -91,11 +91,12 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect | What actually happens | Pass/Fail |
-| ---- | ------------ | ------------- | --------------------- | --------- |
-| 1    |              | Move left     | Move left             | Pass      |
-| 2    | Input Right  | Move Right    | Move Right            | Pass      |
-| 3    | Input space  | Move up       | Move up               |           |
+| Test | Instructions           | What I expect           | What actually happens | Pass/Fail |
+| ---- | ---------------------- | ----------------------- | --------------------- | --------- |
+| 1    | Input Left             | Move left               | As expected           | Pass      |
+| 2    | Input Right            | Move Right              | As expected           | Pass      |
+| 3    | Input space            | Move up                 | As expected           |           |
+| 4    | Input space (airborne) | Move up while air born  | As expected           |           |
 
 ### Evidence
 
