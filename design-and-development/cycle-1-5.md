@@ -15,7 +15,6 @@ set up power ups as well as a win loss system
 
 | Variable Name | Use                                                    |
 | ------------- | ------------------------------------------------------ |
-| chaseAndFlee  | Sets the constant downward acceleration                |
 | onCollide     | Show the anchor point of the Sprite                    |
 | Load Sprite   | Used to input what each symbol represents in the level |
 | Area          | Collision detection (T/F)                              |
