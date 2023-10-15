@@ -19,10 +19,7 @@ set up power ups as well as a win loss system
 | Load Sprite   | Used to input what each symbol represents in the level                 |
 | Area          | Collision detection (T/F)                                              |
 | Body          | Static properties (T/F)                                                |
-|               | Direction of movement                                                  |
-| biggify       | Runs the function doubling the player in size for a set number of time |
-| destroy       |                                                                        |
-|               |                                                                        |
+| biggity       | Runs the function doubling the player in size for a set number of time |
 
 ### Pseudocode
 
