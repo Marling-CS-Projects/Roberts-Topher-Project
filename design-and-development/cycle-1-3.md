@@ -1,4 +1,4 @@
-# 2.5 Cycle 4
+# 2.5 Boss design
 
 ## Design
 
@@ -25,7 +25,42 @@
 ### Pseudocode
 
 ```
-
+Function chaseAndFlee(speed = 60):
+    Initialize dir as 1
+    Initialize chasing as true
+    
+    Return an object with the following properties and behaviors:
+    id: "chaseAndFlee"
+    require: ["pos", "area"]
+    add():
+        When an object with this behavior is added to the game:
+        Set up an event listener for "collide"
+        When a collision occurs:
+        If the collision is on the left or right side of the object:
+        Change the direction of patrol to the opposite direction
+    
+    update():
+        On each game update:
+        If chasing is true:
+            Calculate the distance between the boss and player
+            Get the first player object in the game
+            Calculate the distanceToPlayer as the difference in x-position between the boss and the player
+            If player exists and the distanceToPlayer is greater than 1000:
+                Set dir based on the sign of the distanceToPlayer
+                Move the object horizontally by speed multiplied by dir
+            Else:
+                Set chasing to false
+        Else:
+            Move the object horizontally by speed multiplied by dir
+    
+"*" (For all objects with this behavior):
+    Create a sprite with the image "Boss"
+    Define an area for the object
+    Add a physics body to the object
+    Add the "chaseAndFlee" behavior to the object
+    Set the anchor point of the object to the bottom
+    Scale the object by a factor of 3
+    Assign the label "Boss" to the object
 
 
 

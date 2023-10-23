@@ -1,4 +1,4 @@
-# 2.4 Cycle 3
+# 2.4 Enemy design
 
 ## Design
 
@@ -26,7 +26,28 @@ Set up environment for the Player
 
 ```
 
+Function patrol(speed = 60, dir = 1):
+    Return an object with the following properties and behaviors:
+    id: "patrol"
+    require: ["pos", "area"]
+    add():
+        When an object with this behavior is added to the game:
+        Set up an event listener for "collide"
+        When a collision occurs:
+        If the collision is on the left or right side of the object:
+        Change the direction of patrol to the opposite direction
 
+    update():
+        On each game update:
+        Move the object in the horizontal direction at a speed of "speed" multiplied by "dir"
+
+"*" (For all objects with this behavior):
+    Create a sprite with the image "bad guy"
+    Define an area for the object
+    Add a physics body to the object
+    Add the "patrol" behavior to the object
+    Set the anchor point of the object to the bottom
+    Assign the label "enemy" to the object
 
 
   

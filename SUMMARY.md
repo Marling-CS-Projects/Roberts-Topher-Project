@@ -15,15 +15,13 @@
 ## 2 Design and Development <a href="#design-and-development" id="design-and-development"></a>
 
 * [2.1 Design Frame](2-design-and-development/systems-diagram.md)
-* [2.2 Cycle 1](2-design-and-development/cycle-1.md)
-* [2.3 Cycle 2](design-and-development/cycle-1-1.md)
-* [2.4 Cycle 3](design-and-development/cycle-1-2.md)
-* [2.5 Cycle 4](design-and-development/cycle-1-3.md)
-* [2.6 Cycle 5](design-and-development/cycle-1-4.md)
-* [2.7 Cycle 6](design-and-development/cycle-1-5.md)
-* [2.8 Cycle 7](design-and-development/2.8-cycle-7.md)
-* [2.8 Cycle 7](design-and-development/2.8-cycle-7-1.md)
-* [2.9 Cycle 8](design-and-development/2.9-cycle-8.md)
+* [2.2 Stage setup](2-design-and-development/cycle-1.md)
+* [2.3 Movement](design-and-development/cycle-1-1.md)
+* [2.4 Enemy design](design-and-development/cycle-1-2.md)
+* [2.5 Boss design](design-and-development/cycle-1-3.md)
+* [2.7 Power up](design-and-development/cycle-1-4.md)
+* [2.8 Win/Loss setup](design-and-development/cycle-1-5.md)
+* [2.9 Menu setup](design-and-development/cycle-1-6.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
 

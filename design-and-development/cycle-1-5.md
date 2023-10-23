@@ -1,4 +1,4 @@
-# 2.7 Cycle 6
+# 2.8 Win/Loss setup
 
 ## Design
 
@@ -25,7 +25,36 @@ set up power ups as well as a win loss system
 
 ```
 
+player.onCollide("COIN", (c) => {
+    {
+        destroy(c)
+        go("win")
+       
+    }
+});
+            
+            
+// Define the "win" scene
+scene("win", () => {
+    var jump = 1
+add([
+        text("You WIN"),
+        pos(12),
+    ]);
+    // Press any key to go back to the start
+    onKeyPress(start);
+});
 
+// Define the "lose" scene
+scene("lose", () => {
+    var jump = 1
+    add([
+        text("You Lose"),
+        pos(12),
+    ]);
+
+    // Press any key to go back to the start
+    onKeyPress(start);
 
 
   
@@ -37,34 +66,6 @@ set up power ups as well as a win loss system
 ### Outcome
 
 ```
-function big() {
-    let timer = 0
-    let isBig = false
-    return {
-      update() {
-        if (isBig) {
-          CURRENT_JUMP_FORCE = BIG_JUMP_FORCE
-          timer -= dt()
-          if (timer <= 0) {
-            this.smallify()
-          }
-        }
-      },
-      isBig() {
-        return isBig
-      },
-      smallify() {
-        this.scale = vec2(1)
-        CURRENT_JUMP_FORCE = JUMP_FORCE
-        timer = 0
-        isBig = false
-      },
-      biggify(time) {
-        this.scale = vec2(2)
-        timer = time
-        isBig = true     
-      }
-    }
 
 "%": () => [
                 sprite("star"),

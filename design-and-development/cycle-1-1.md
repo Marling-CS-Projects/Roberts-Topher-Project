@@ -1,4 +1,4 @@
-# 2.3 Cycle 2
+# 2.3 Movement
 
 ## Design
 
@@ -18,21 +18,22 @@ Set up environment for the Player
 ### Pseudocode
 
 ```
-Import Kaboom
+Function for the Player:
+    Create a player sprite
+    Define an area for the player
+    Add a body to the player
+    Set the anchor point to the bottom of the player sprite
+    Assign the label "player" to the player
 
-Set Gravity:
-Set Speed:
+    When the "space" key is pressed:
+        If the player is on the ground:
+            Make the player jump
 
-Load Sprite(Player)
+    When the "left" key is held down:
+        Move the player to the left with a speed of SPEED
 
-constant add player
-sprite(player)
-area
-body
-anchor
-
-
-
+    When the "right" key is held down:
+        Move the player to the right with a speed of SPEED
   
   
 ```

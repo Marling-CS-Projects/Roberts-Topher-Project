@@ -1,4 +1,4 @@
-# 2.7 Power up
+# 2.9 Menu setup
 
 ## Design
 
@@ -25,32 +25,36 @@ set up power ups as well as a win loss system
 
 ```
 
-Function big():
-    Initialize timer as 0
-    Initialize isBig as false
-    
-    Return an object with the following methods and properties:
-    update():
-        If isBig is true:
-            Set CURRENT_JUMP_FORCE to BIG_JUMP_FORCE
-            Decrease timer by the time elapsed since the last frame (dt())
-            If timer is less than or equal to 0:
-                Call the smallify() method
+player.onCollide("COIN", (c) => {
+    {
+        destroy(c)
+        go("win")
+       
+    }
+});
+            
+            
+// Define the "win" scene
+scene("win", () => {
+    var jump = 1
+add([
+        text("You WIN"),
+        pos(12),
+    ]);
+    // Press any key to go back to the start
+    onKeyPress(start);
+});
 
-    isBig():
-        Return the value of isBig
+// Define the "lose" scene
+scene("lose", () => {
+    var jump = 1
+    add([
+        text("You Lose"),
+        pos(12),
+    ]);
 
-    smallify():
-        Set the scale of the object to (1, 1)
-        Set CURRENT_JUMP_FORCE to JUMP_FORCE
-        Reset timer to 0
-        Set isBig to false
-
-    biggify(time):
-        Set the scale of the object to (2, 2)
-        Set timer to the given "time" value
-        Set isBig to true
-
+    // Press any key to go back to the start
+    onKeyPress(start);
 
 
   
@@ -62,35 +66,56 @@ Function big():
 ### Outcome
 
 ```
-function big() {
-    let timer = 0
-    let isBig = false
-    return {
-      update() {
-        if (isBig) {
-          CURRENT_JUMP_FORCE = BIG_JUMP_FORCE
-          timer -= dt()
-          if (timer <= 0) {
-            this.smallify()
-          }
-        }
-      },
-      isBig() {
-        return isBig
-      },
-      smallify() {
-        this.scale = vec2(1)
-        CURRENT_JUMP_FORCE = JUMP_FORCE
-        timer = 0
-        isBig = false
-      },
-      biggify(time) {
-        this.scale = vec2(2)
-        timer = time
-        isBig = true     
-      }
-    }
 
+"%": () => [
+                sprite("star"),
+                area(),
+                body(),
+                anchor("bot"),
+                "star"
+            ],        
+
+
+player.onCollide("star", (s) => {
+    {
+            destroy(s)
+    player.biggify(1)
+       
+    }
+});
+
+
+    player.onCollide("COIN", (c) => {
+    {
+        destroy(c)
+        go("win")
+       
+    }
+});
+            
+            
+// Define the "win" scene
+scene("win", () => {
+    var jump = 1
+add([
+        text("You WIN"),
+        pos(12),
+    ]);
+    // Press any key to go back to the start
+    onKeyPress(start);
+});
+
+// Define the "lose" scene
+scene("lose", () => {
+    var jump = 1
+    add([
+        text("You Lose"),
+        pos(12),
+    ]);
+
+    // Press any key to go back to the start
+    onKeyPress(start);
+});
 ```
 
 ### Challenges
