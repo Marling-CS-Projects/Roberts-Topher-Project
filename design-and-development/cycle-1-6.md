@@ -24,40 +24,6 @@ set up power ups as well as a win loss system
 ### Pseudocode
 
 ```
-
-player.onCollide("COIN", (c) => {
-    {
-        destroy(c)
-        go("win")
-       
-    }
-});
-            
-            
-// Define the "win" scene
-scene("win", () => {
-    var jump = 1
-add([
-        text("You WIN"),
-        pos(12),
-    ]);
-    // Press any key to go back to the start
-    onKeyPress(start);
-});
-
-// Define the "lose" scene
-scene("lose", () => {
-    var jump = 1
-    add([
-        text("You Lose"),
-        pos(12),
-    ]);
-
-    // Press any key to go back to the start
-    onKeyPress(start);
-
-
-  
   
 ```
 
@@ -66,56 +32,6 @@ scene("lose", () => {
 ### Outcome
 
 ```
-
-"%": () => [
-                sprite("star"),
-                area(),
-                body(),
-                anchor("bot"),
-                "star"
-            ],        
-
-
-player.onCollide("star", (s) => {
-    {
-            destroy(s)
-    player.biggify(1)
-       
-    }
-});
-
-
-    player.onCollide("COIN", (c) => {
-    {
-        destroy(c)
-        go("win")
-       
-    }
-});
-            
-            
-// Define the "win" scene
-scene("win", () => {
-    var jump = 1
-add([
-        text("You WIN"),
-        pos(12),
-    ]);
-    // Press any key to go back to the start
-    onKeyPress(start);
-});
-
-// Define the "lose" scene
-scene("lose", () => {
-    var jump = 1
-    add([
-        text("You Lose"),
-        pos(12),
-    ]);
-
-    // Press any key to go back to the start
-    onKeyPress(start);
-});
 ```
 
 ### Challenges
