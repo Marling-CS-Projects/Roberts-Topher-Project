@@ -123,6 +123,17 @@ function chaseAndFlee(speed = 60) {
                 "Boss",
             ],
 
+
+
+ player.onCollide("Boss", (boss, col) => {
+        if (col.isBottom()) {
+
+            destroy(boss);
+        } else {
+
+            go("lose");
+        }
+    });
 ```
 
 ### Challenges

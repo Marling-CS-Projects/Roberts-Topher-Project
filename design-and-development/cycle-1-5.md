@@ -62,6 +62,8 @@ scene("win", () => {
 add([
         text("You WIN"),
         pos(12),
+        text(score),
+        pos(10),
     ]);
     // Press any key to go back to the start
     onKeyPress(start);

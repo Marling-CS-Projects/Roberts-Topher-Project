@@ -87,6 +87,20 @@ Function patrol(speed = 60, dir = 1):
         patrol(),
         anchor("bot"),
         "enemy",
+        
+        
+         
+    // Handle player collision with enemies
+    player.onCollide("enemy", (enemy, col) => {
+        if (col.isBottom()) {
+            // Kill the enemy when collision is from the top
+            destroy(enemy);
+        } else {
+            // Player collided with the enemy from the side or below, go to the "lose" scene
+            go("lose");
+        }
+    });
+
                 
 //
         
