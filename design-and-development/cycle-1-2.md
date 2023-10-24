@@ -117,7 +117,7 @@ Evidence for testing
 
 ### Tests
 
-<table data-full-width="true"><thead><tr><th width="136">Test</th><th>Instructions</th><th>What I expect</th><th>What actually happens</th><th>Pass/Fail</th></tr></thead><tbody><tr><td>1</td><td>Input Left</td><td>Move left</td><td>As expected</td><td>Pass</td></tr><tr><td>2</td><td>Input Right</td><td>Move Right </td><td>As expected</td><td>Pass</td></tr><tr><td>3</td><td>Input space</td><td>Move up </td><td>As expected</td><td>Pass</td></tr><tr><td>4</td><td>Input space (airborne)</td><td>Move up while air born </td><td>As expected</td><td>Pass</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="136">Test</th><th>Instructions</th><th>What I expect</th><th>What actually happens</th><th>Pass/Fail</th></tr></thead><tbody><tr><td>1</td><td>Player colliedes with the enemy (on top)</td><td>The enemy to be destroyed</td><td>The enemy is destroyed</td><td>Pass</td></tr><tr><td>2</td><td>Player colliedes with the enemy (anywhere else)</td><td>The player to be destroyed</td><td>The player is destroyed</td><td>Pass</td></tr></tbody></table>
 
 ### Evidence
 
