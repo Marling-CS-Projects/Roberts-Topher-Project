@@ -6,8 +6,8 @@
 
 Set up environment for the Player
 
-* [x] Do a thing
-* [x] Do another thing
+* [x] Set up levels&#x20;
+* [x] Add sprites
 
 ### Usability Features
 

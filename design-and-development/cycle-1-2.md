@@ -4,10 +4,11 @@
 
 ### Objectives
 
-Set up environment for the Player
+Set up the enemy&#x20;
 
-* [x] Do a thing
-* [x] Do another thing
+* [x] code the funtion to make the enemy walk left and right
+* [x] And swap direcions when colliding with a wall
+* [x] Adding collison so when the player and the enemy colides (on top) the enemy dies
 
 ### Usability Features
 

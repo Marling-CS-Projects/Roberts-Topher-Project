@@ -6,8 +6,8 @@
 
 Set up environment for the Player
 
-* [x] Do a thing
-* [x] Do another thing
+* [x] Set up reletive speed and gravity
+* [x] Add colision and controls for the player
 
 ### Usability Features
 

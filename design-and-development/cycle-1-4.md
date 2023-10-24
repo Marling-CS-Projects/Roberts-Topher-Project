@@ -13,13 +13,10 @@ set up power ups as well as a win loss system
 
 ### Key Variables
 
-| Variable Name | Use                                                                    |
-| ------------- | ---------------------------------------------------------------------- |
-| onCollide     | Show the anchor point of the Sprite                                    |
-| Load Sprite   | Used to input what each symbol represents in the level                 |
-| Area          | Collision detection (T/F)                                              |
-| Body          | Static properties (T/F)                                                |
-| biggity       | Runs the function doubling the player in size for a set number of time |
+| Variable Name | Use                               |
+| ------------- | --------------------------------- |
+| biggify       | doubles the players size          |
+| smalify       | returns the player back to normal |
 
 ### Pseudocode
 
@@ -107,3 +104,4 @@ Evidence for testing
 
 ### Evidence
 
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>

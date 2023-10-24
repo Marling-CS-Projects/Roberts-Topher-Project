@@ -6,8 +6,10 @@
 
 
 
-* [x] Do a thing
-* [x] Do another thing
+* [x] Set up a final bass
+* [x] Program the bos with ai to periodily chase and then flee the player
+
+
 
 ### Usability Features
 
