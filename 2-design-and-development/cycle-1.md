@@ -1,4 +1,4 @@
-# 2.2 Cycle 1
+# 2.2 Stage setup
 
 ## Design
 
@@ -84,4 +84,4 @@ Description of challenges
 
 ### Evidence
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (2).png>)
