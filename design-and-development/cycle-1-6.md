@@ -73,7 +73,7 @@ scene("game", () => {
 
 ### Tests
 
-<table data-full-width="true"><thead><tr><th width="136">Test</th><th>Instructions</th><th width="216">What I expect</th><th>What actually happens</th><th>Pass/Fail</th></tr></thead><tbody><tr><td>1</td><td>Press Z</td><td>the game to pause and the menu is displayed</td><td>Game pauses withouth menu</td><td>Fail</td></tr><tr><td>2 </td><td>Press Z while game is paused</td><td></td><td></td><td></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="136">Test</th><th>Instructions</th><th width="216">What I expect</th><th>What actually happens</th><th>Pass/Fail</th></tr></thead><tbody><tr><td>1</td><td>Press Z</td><td>the game to pause and the menu is displayed</td><td>Game pauses withouth menu</td><td>Fail</td></tr><tr><td>2 </td><td>Press Z while game is paused</td><td>The game to unpause</td><td>The game unpauses</td><td>Pass</td></tr></tbody></table>
 
 ### Evidence
 
