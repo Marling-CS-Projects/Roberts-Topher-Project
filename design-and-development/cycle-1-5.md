@@ -1,27 +1,50 @@
 # 2.8 Win/Loss setup
 
-## Design
+## esign
 
 ### Objectives
 
-set up power ups as well as a win loss system
+set up win loss system
 
-* [x] Do a thing
-* [x] Do another thing
+* [x] Display when when conditions are met
+* [x] Display a loss screen when the player dies
 
 ### Usability Features
 
 ### Key Variables
 
-| Variable Name | Use                                                                    |
-| ------------- | ---------------------------------------------------------------------- |
-| onCollide     | Show the anchor point of the Sprite                                    |
-| Load Sprite   | Used to input what each symbol represents in the level                 |
-| Area          | Collision detection (T/F)                                              |
-| Body          | Static properties (T/F)                                                |
-| biggity       | Runs the function doubling the player in size for a set number of time |
+| Variable Name | Use                 |
+| ------------- | ------------------- |
+| destroy       | Destroys the object |
+|               |                     |
 
 ### Pseudocode
+
+```
+
+When the player collides with a "COIN":
+    Destroy the coin.
+    Transition to the "win" scene.
+
+Define the "win" scene:
+    Set jump to 1.
+    Display the text "You WIN" at position (12).
+    Wait for any key press to return to the start scene.
+
+Define the "lose" scene:
+   
+    Display the text "You Lose" at position (12).
+    Wait for any key press to return to the start scene.
+
+
+
+  
+  
+```
+
+## Development&#x20;
+
+### Outcome
 
 ```
 
@@ -59,63 +82,6 @@ scene("lose", () => {
 
   
   
-```
-
-## Development&#x20;
-
-### Outcome
-
-```
-
-"%": () => [
-                sprite("star"),
-                area(),
-                body(),
-                anchor("bot"),
-                "star"
-            ],        
-
-
-player.onCollide("star", (s) => {
-    {
-            destroy(s)
-    player.biggify(1)
-       
-    }
-});
-
-
-    player.onCollide("COIN", (c) => {
-    {
-        destroy(c)
-        go("win")
-       
-    }
-});
-            
-            
-// Define the "win" scene
-scene("win", () => {
-    var jump = 1
-add([
-        text("You WIN"),
-        pos(12),
-    ]);
-    // Press any key to go back to the start
-    onKeyPress(start);
-});
-
-// Define the "lose" scene
-scene("lose", () => {
-    var jump = 1
-    add([
-        text("You Lose"),
-        pos(12),
-    ]);
-
-    // Press any key to go back to the start
-    onKeyPress(start);
-});
 ```
 
 ### Challenges
